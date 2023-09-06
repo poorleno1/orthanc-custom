@@ -11,7 +11,7 @@ COPY az_cli.sh .
 #RUN chown -R appuser /app 
 
 # Give the new user execute permissions on the file
-#RUN chmod a+x az_cli.sh
+RUN chmod a+x az_cli.sh
 
 #USER appuser
 
