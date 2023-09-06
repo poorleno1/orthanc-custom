@@ -25,6 +25,8 @@ az --version
 
 az login --service-principal -u $APP_ID -p $APP_PASSWORD --tenant $APP_TENANT_ID
 
+sleep 3s
+
 ACI_IP=$(az container show --name $ACI_INSTANCE_NAME --resource-group $RESOURCE_GROUP --query ipAddress.ip --output tsv)
 
 echo $ACI_IP
