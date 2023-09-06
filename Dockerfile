@@ -15,5 +15,6 @@ RUN chmod a+x az_cli.sh
 
 USER appuser
 
-RUN apt-get update && apt-get install -y curl && | curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+RUN apt-get update && apt-get install -y curl 
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
 #CMD [ "./az_cli.sh" ]
