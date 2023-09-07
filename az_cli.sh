@@ -23,8 +23,8 @@ function valid_ip()
 
 az --version
 
-#az login --service-principal -u $APP_ID -p $APP_PASSWORD --tenant $APP_TENANT_ID
-az login --identity
+az login --service-principal -u $APP_ID -p $APP_PASSWORD --tenant $APP_TENANT_ID
+#az login --identity
 
 sleep 3s
 
